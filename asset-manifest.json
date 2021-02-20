@@ -1,0 +1,18 @@
+{
+  "files": {
+    "main.js": "/popcorn_time/static/js/main.1077cbf5.chunk.js",
+    "main.js.map": "/popcorn_time/static/js/main.1077cbf5.chunk.js.map",
+    "runtime-main.js": "/popcorn_time/static/js/runtime-main.a8abe2c3.js",
+    "runtime-main.js.map": "/popcorn_time/static/js/runtime-main.a8abe2c3.js.map",
+    "static/js/2.c19d06bf.chunk.js": "/popcorn_time/static/js/2.c19d06bf.chunk.js",
+    "static/js/2.c19d06bf.chunk.js.map": "/popcorn_time/static/js/2.c19d06bf.chunk.js.map",
+    "index.html": "/popcorn_time/index.html",
+    "static/js/2.c19d06bf.chunk.js.LICENSE.txt": "/popcorn_time/static/js/2.c19d06bf.chunk.js.LICENSE.txt",
+    "static/media/noPosterSmall.ea2ad102.png": "/popcorn_time/static/media/noPosterSmall.ea2ad102.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.a8abe2c3.js",
+    "static/js/2.c19d06bf.chunk.js",
+    "static/js/main.1077cbf5.chunk.js"
+  ]
+}
