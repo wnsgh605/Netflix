@@ -29,7 +29,11 @@ const TVPresenter = ({ topRated, popular, airingToday, error, loading }) => {
               imageUrl={tv.poster_path}
               rating={tv.vote_average}
               title={tv.name}
-              year={tv.first_air_date.slice(0, 4)}
+              year={
+                tv.first_air_date
+                  ? tv.first_air_date.slice(0, 4)
+                  : "Not defined"
+              }
               isMovie={false}
             ></Poster>
           ))}
@@ -45,7 +49,11 @@ const TVPresenter = ({ topRated, popular, airingToday, error, loading }) => {
               imageUrl={tv.poster_path}
               rating={tv.vote_average}
               title={tv.name}
-              year={tv.first_air_date.slice(0, 4)}
+              year={
+                tv.first_air_date
+                  ? tv.first_air_date.slice(0, 4)
+                  : "Not defined"
+              }
               isMovie={false}
             ></Poster>
           ))}
@@ -61,7 +69,11 @@ const TVPresenter = ({ topRated, popular, airingToday, error, loading }) => {
               imageUrl={tv.poster_path}
               rating={tv.vote_average}
               title={tv.name}
-              year={tv.first_air_date.slice(0, 4)}
+              year={
+                tv.first_air_date
+                  ? tv.first_air_date.slice(0, 4)
+                  : "Not defined"
+              }
               isMovie={false}
             ></Poster>
           ))}

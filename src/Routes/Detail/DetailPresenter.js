@@ -116,9 +116,16 @@ const DetailPresenter = ({ result, error, loading, isMovie }) => {
           {isMovie ? (
             <>
               <Title>{result.title}</Title>
-              <Year>{result.release_date.slice(0, 4)}</Year>·
-              <Duration>{`${result.runtime} min`}</Duration>·
-              <Genre>{genreName.join(" / ")}</Genre>·
+              <Year>
+                {result.release_date
+                  ? result.release_date.slice(0, 4)
+                  : "Not defined"}
+              </Year>
+              ·<Duration>{`${result.runtime} min`}</Duration>·
+              <Genre>
+                {genreName.length !== 0 ? genreName.join(" / ") : "Not defined"}
+              </Genre>
+              ·
               <RatingBox>
                 <SRating rating={result.vote_average}></SRating>
               </RatingBox>
@@ -127,9 +134,16 @@ const DetailPresenter = ({ result, error, loading, isMovie }) => {
           ) : (
             <>
               <Title>{result.name}</Title>
-              <Year>{result.first_air_date.slice(0, 4)}</Year>·
-              <Duration>{result.episode_run_time[0]}</Duration>·
-              <Genre>{genreName.join(" / ")}</Genre>·
+              <Year>
+                {result.first_air_date
+                  ? result.first_air_date.slice(0, 4)
+                  : "Not defined"}
+              </Year>
+              ·<Duration>{`${result.episode_run_time[0]} min`}</Duration>·
+              <Genre>
+                {genreName.length !== 0 ? genreName.join(" / ") : "Not defined"}
+              </Genre>
+              ·
               <RatingBox>
                 <SRating rating={result.vote_average}></SRating>
               </RatingBox>

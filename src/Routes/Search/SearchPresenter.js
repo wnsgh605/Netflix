@@ -31,6 +31,7 @@ const SearchPresenter = ({
   error,
   loading,
 }) => {
+  console.log(tvResults);
   return (
     <Container>
       <Helmet>
@@ -63,7 +64,11 @@ const SearchPresenter = ({
                     imageUrl={movie.poster_path}
                     rating={movie.vote_average}
                     title={movie.title}
-                    year={movie.release_date.slice(0, 4)}
+                    year={
+                      movie.release_date
+                        ? movie.release_date.slice(0, 4)
+                        : "Not defined"
+                    }
                     isMovie={true}
                   ></Poster>
                 ))}
@@ -85,7 +90,11 @@ const SearchPresenter = ({
                     imageUrl={tv.poster_path}
                     rating={tv.vote_average}
                     title={tv.name}
-                    year={tv.first_air_date.slice(0, 4)}
+                    year={
+                      tv.first_air_date
+                        ? tv.first_air_date.slice(0, 4)
+                        : "Not defined"
+                    }
                     isMovie={false}
                   ></Poster>
                 ))}
